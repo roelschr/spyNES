@@ -1,16 +1,7 @@
 KBsize = 1024
 
 class ROM:
-    sNES = "NES" # 3 bytes
-    idFormat = 0x1A # 1 byte
-    num16ROMBanks = 0x00 # 1 byte
-    num8ROMBanks = 0x00 # 1 byte
-    ctrl1 = 0x00 # 1 byte
-    ctrl2 = 0x00 # 1 byte
-    num8RAMBanks = 0x00 # 1 byte
-    reserved = [] # 7 byte
-
-    data = []
+    sNES = "NES" # 3 byte
 
     def __init__(self, romFile):
         if  (romFile.read(3) == self.sNES):

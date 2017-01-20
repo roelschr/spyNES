@@ -11,6 +11,5 @@ def main():
     fp = open(sys.argv[1],  "rb")
     ROM(fp)
 
-
 if __name__ == "__main__":
     main()
